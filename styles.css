@@ -19,7 +19,7 @@ body {
 
 .sidebar {
     background-image: url("assets/images/dream.jpg");
-    background-color: lightseagreen;
+    background-color: pink;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,6 +42,12 @@ body {
     align-items: center;
 }
 
+.logo {
+    width: calc(64px + 2vw);
+    height: calc(64px + 2vw);
+    padding-right: 2vw;
+}
+
 .title {
     font-size: calc(54px + 2vw);
     color: white;
@@ -55,7 +61,6 @@ body {
 }
 
 .content {
-    background-color: black;
     width: 60vw;
     height: 100vh;
     display: flex;
@@ -64,25 +69,28 @@ body {
 
 .headerContainer {
     width: 100%;
-    height: 45vh;
-    background-color: black;
-    color: white;
-    font-size: calc(18px + 0.75vw);
+    height: 40vh;
+    background-color: white;
+    color: black;
+    font-size: calc(12px + 0.5vw);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .formContainer {
     width: 100%;
-    height: 40vh;
-    background-color: black;
+    height: 60vh;
+    background-color: white;
 }
 
-.bottomContainer {
-    width: 100%;
-    height: 15vh;
-    background-color: black;}
-
 p {
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 0 2vw 0 2vw;
+    margin: 0;
+}
+
+.headerContainer p:last-child {
+    padding-top: 2vh;
 }
