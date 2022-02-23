@@ -65,20 +65,22 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(245, 245, 245);
 }
 
 .headerContainer {
     width: 100%;
-    height: 40vh;
-    background-color: white;
+    height: 30vh;
+    background-color: rgb(245, 245, 245);
     color: black;
-    font-size: calc(14px + 0.5vw);
-    font-weight: 550;
+    font-size: calc(12px + 0.5vw);
+    font-weight: 600;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
+    padding-bottom: 30px;
 }
 
 p {
@@ -90,25 +92,31 @@ p {
     padding-top: calc(14px + 0.5vh);
 }
 
-.form {
-    width: 100%;
-    height: 60vh;
+.fieldset {
+    height: 32vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2vh;
+    border: 0;
+    padding:0;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -25px;
 }
 
 .form-row {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 12px;
-    gap: 4vw;
-    width: 100%;
+    justify-content: flex-start;
+    margin-right: 12vw;
+    margin-left: 2vw;
+    gap: 3vw;
 }
 
 .form-item {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
     width: 100%;
+    gap: 2px;
 }
 
 .form-item input[type='text'] {
@@ -116,6 +124,7 @@ p {
     border: 1px solid lightgray;
     border-radius: 3px;
     width: 100%;
+    height: 16px;
 }
 
 .form-item input[type='email'] {
@@ -123,6 +132,7 @@ p {
     border: 1px solid lightgray;
     border-radius: 3px;
     width: 100%;
+    height: 16px;
 }
 
 .form-item input[type='password'] {
@@ -130,10 +140,45 @@ p {
     border: 1px solid lightgray;
     border-radius: 3px;
     width: 100%;
+    height: 16px;
+}
+
+.form-item input, label {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+label {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 11px;
+    color: gray;
+    letter-spacing: 0.1em;
 }
 
 legend {
-    font-size: calc(14px + 0.5vw);
-    font-weight: 550;
+    display: none;
+}
+
+h2 {
+    font-size: calc(12px + 0.5vw);
+    font-weight: 600;
+    margin-left: 2vw;
+    margin-bottom: 8px;
+    margin-top: 16px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+button {
+    width: 35%;
+    margin: 50px 0 0 4vw;
+    font-size: calc(7px + 0.5vw);
+    font-weight: 600;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #c22069;
+    color: white;
+    border: 3px solid #c22069;
+    border-radius: 10px;
