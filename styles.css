@@ -146,6 +146,10 @@ p {
     height: 16px;
 }
 
+.error.form-item input[type='password'] {
+    border-color: red;
+}
+
 .form-item input {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
