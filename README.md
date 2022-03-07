@@ -2,6 +2,8 @@
 
 This is a sample sign-up form to practice intermediate HTML & CSS skills. 
 
+#### [Live Preview](https://justin-gallo.github.io/signUpForm/)
+
 ### *Things I learned:*
 
 * Sizing elements using viewport width & viewport height
